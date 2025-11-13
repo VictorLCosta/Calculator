@@ -23,6 +23,7 @@
         </Grid.RowDefinitions>
 
         <Label
+            x:Name="ResultLabel"
             Content="0"
             Grid.Column="3"
             Grid.Row="0"
@@ -31,113 +32,132 @@
             FontSize="60"
         />
         <Button
+            x:Name="ACButton"
             Content="AC"
             Grid.Row="1"
             Margin="5"
         />
         <Button
+            x:Name="NegativeButton"
             Content="+/1"
             Grid.Row="1"
             Grid.Column="1"
             Margin="5"
         />
         <Button
+            x:Name="PercentageButton"
             Content="%"
             Grid.Row="1"
             Grid.Column="2"
             Margin="5"
         />
         <Button
+            x:Name="DivideButton"
             Content="/"
             Grid.Row="1"
             Grid.Column="3"
             Margin="5"
         />
         <Button
+            x:Name="SevenButton"
             Content="7"
             Grid.Row="2"
             Grid.Column="0"
             Margin="5"
         />
         <Button
+            x:Name="EightButton"
             Content="8"
             Grid.Row="2"
             Grid.Column="1"
             Margin="5"
         />
         <Button
+            x:Name="NineButton"
             Content="9"
             Grid.Row="2"
             Grid.Column="2"
             Margin="5"
         />
         <Button
+            x:Name="TimesButton"
             Content="*"
             Grid.Row="2"
             Grid.Column="3"
             Margin="5"
         />
         <Button
+            x:Name="FourButton"
             Content="4"
             Grid.Row="3"
             Grid.Column="0"
             Margin="5"
         />
         <Button
+            x:Name="FiveButton"
             Content="5"
             Grid.Row="3"
             Grid.Column="1"
             Margin="5"
         />
         <Button
+            x:Name="SixButton"
             Content="6"
             Grid.Row="3"
             Grid.Column="2"
             Margin="5"
         />
         <Button
+            x:Name="MinusButton"
             Content="-"
             Grid.Row="3"
             Grid.Column="3"
             Margin="5"
         />
         <Button
+            x:Name="OneButton"
             Content="1"
             Grid.Row="4"
             Grid.Column="0"
             Margin="5"
         />
         <Button
+            x:Name="TwoButton"
             Content="2"
             Grid.Row="4"
             Grid.Column="1"
             Margin="5"
         />
         <Button
+            x:Name="ThreeButton"
             Content="3"
             Grid.Row="4"
             Grid.Column="2"
             Margin="5"
         />
         <Button
+            x:Name="PlusButton"
             Content="+"
             Grid.Row="4"
             Grid.Column="3"
             Margin="5"
         />
         <Button
+            x:Name="ZeroButton"
             Content="0"
             Grid.Row="5"
             Grid.ColumnSpan="2"
             Margin="5"
         />
         <Button
+            x:Name="DotButton"
             Content="."
             Grid.Row="5"
             Grid.Column="2"
             Margin="5"
         />
         <Button
+            x:Name="EqualsButton"
             Content="="
             Grid.Row="5"
             Grid.Column="3"
