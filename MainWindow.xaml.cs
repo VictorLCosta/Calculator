@@ -92,8 +92,7 @@ public partial class MainWindow : Window
 
     private void PercentageButton_Click(object sender, RoutedEventArgs e)
     {
-        double tempNumber;
-        if (double.TryParse(userInput, out tempNumber))
+        if (double.TryParse(userInput, out double tempNumber))
         {
             tempNumber = (tempNumber / 100);
             if (operand != 0)
