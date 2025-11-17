@@ -51,7 +51,7 @@
             Grid.Row="1"
             Grid.Column="2"
             Margin="5"
-            Click="Button_Click"
+            Click="PercentageButton_Click"
         />
         <Button
             x:Name="DivideButton"

@@ -90,6 +90,18 @@ public partial class MainWindow : Window
             Reset();
     }
 
+    private void PercentageButton_Click(object sender, RoutedEventArgs e)
+    {
+        double tempNumber;
+        if (double.TryParse(userInput, out tempNumber))
+        {
+            tempNumber = (tempNumber / 100);
+            if (operand != 0)
+                tempNumber *= operand;
+            ResultLabel.Content = tempNumber.ToString();
+        }
+    }
+
     private void Reset()
     {
         userInput = "0";
@@ -120,6 +132,7 @@ public partial class MainWindow : Window
                 break;
         }
     }
+
 }
 
 public enum SelectedOperator
