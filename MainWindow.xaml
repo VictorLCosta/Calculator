@@ -60,6 +60,7 @@
             Grid.Column="3"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource OperandButton}"
         />
         <Button
             x:Name="SevenButton"
@@ -68,6 +69,7 @@
             Grid.Column="0"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource DigitButton}"
         />
         <Button
             x:Name="EightButton"
@@ -76,6 +78,7 @@
             Grid.Column="1"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource DigitButton}"
         />
         <Button
             x:Name="NineButton"
@@ -84,6 +87,7 @@
             Grid.Column="2"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource DigitButton}"
         />
         <Button
             x:Name="TimesButton"
@@ -92,6 +96,7 @@
             Grid.Column="3"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource OperandButton}"
         />
         <Button
             x:Name="FourButton"
@@ -100,6 +105,7 @@
             Grid.Column="0"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource DigitButton}"
         />
         <Button
             x:Name="FiveButton"
@@ -108,6 +114,7 @@
             Grid.Column="1"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource DigitButton}"
         />
         <Button
             x:Name="SixButton"
@@ -116,6 +123,7 @@
             Grid.Column="2"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource DigitButton}"
         />
         <Button
             x:Name="MinusButton"
@@ -124,6 +132,7 @@
             Grid.Column="3"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource OperandButton}"
         />
         <Button
             x:Name="OneButton"
@@ -132,6 +141,7 @@
             Grid.Column="0"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource DigitButton}"
         />
         <Button
             x:Name="TwoButton"
@@ -140,6 +150,7 @@
             Grid.Column="1"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource DigitButton}"
         />
         <Button
             x:Name="ThreeButton"
@@ -148,6 +159,7 @@
             Grid.Column="2"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource DigitButton}"
         />
         <Button
             x:Name="PlusButton"
@@ -156,6 +168,7 @@
             Grid.Column="3"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource OperandButton}"
         />
         <Button
             x:Name="ZeroButton"
@@ -164,6 +177,7 @@
             Grid.ColumnSpan="2"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource DigitButton}"
         />
         <Button
             x:Name="DotButton"
@@ -171,6 +185,7 @@
             Grid.Row="5"
             Grid.Column="2"
             Margin="5"
+            Style="{StaticResource DigitButton}"
         />
         <Button
             x:Name="EqualsButton"
@@ -179,6 +194,7 @@
             Grid.Column="3"
             Margin="5"
             Click="Button_Click"
+            Style="{StaticResource OperandButton}"
         />
     </Grid>
 </Window>
