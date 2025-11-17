@@ -22,14 +22,12 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <TextBlock
-            x:Name="ResultText"
-            Text="0"
-            Grid.Column="3"
-            Grid.Row="0"
+        <Label
+            x:Name="ResultLabel"
+            Content="0"
+            Grid.ColumnSpan="4"
             VerticalAlignment="Bottom"
-            HorizontalAlignment="Right"
-            TextAlignment="Right"
+            HorizontalContentAlignment="Right"
             FontSize="60"
         />
         <Button

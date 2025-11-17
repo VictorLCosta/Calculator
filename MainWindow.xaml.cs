@@ -9,7 +9,7 @@ public partial class MainWindow : Window
     private double operand = 0.0;
     private double operand2 = 0.0;
     private double result = 0.0;
-    private SelectedOperator selectedOperator;
+    private SelectedOperator? selectedOperator = null;
 
     private readonly string[] digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
     private readonly Dictionary<string, SelectedOperator> operators = new()
@@ -30,13 +30,21 @@ public partial class MainWindow : Window
         var button = (Button)sender;
         var selectedValue = button.Content.ToString()!;
 
-        if (selectedValue == "0" && userInput == "0")
-            return;
-
         if (digits.Contains(selectedValue))
         {
-            userInput += selectedValue;
-            ResultText.Text = userInput;
+            if (selectedValue == "0" && userInput == "0")
+                return;
+
+            if (userInput == "0")
+            {
+                userInput = $"{selectedValue}";
+            }
+            else
+            {
+                userInput = $"{userInput}{selectedValue}";
+            }
+
+            ResultLabel.Content = userInput;
 
             return;
         }
@@ -47,7 +55,16 @@ public partial class MainWindow : Window
             selectedOperator = @operator;
 
             userInput = "0";
-            ResultText.Text = userInput;
+            ResultLabel.Content = userInput;
+            return;
+        }
+
+        if (selectedValue == ".")
+        {
+            if (!userInput.Contains('.'))
+                userInput += ".";
+
+            ResultLabel.Content = userInput;
             return;
         }
 
@@ -56,7 +73,17 @@ public partial class MainWindow : Window
             operand2 = double.Parse(userInput);
             Calculate();
             userInput = result.ToString();
-            ResultText.Text = userInput;
+            ResultLabel.Content = userInput;
+        }
+
+        if (button == NegativeButton)
+        {
+            result = double.Parse(userInput) * -1;
+            userInput = result.ToString();
+
+            ResultLabel.Content = userInput;
+
+            return;
         }
 
         if (button == ACButton)
@@ -70,7 +97,7 @@ public partial class MainWindow : Window
         operand = 0.0;
         operand2 = 0.0;
 
-        ResultText.Text = userInput;
+        ResultLabel.Content = userInput;
     }
 
     private void Calculate()
@@ -88,6 +115,8 @@ public partial class MainWindow : Window
                 break;
             case SelectedOperator.Division:
                 result = operand / operand2;
+                break;
+            case null:
                 break;
         }
     }
